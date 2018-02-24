@@ -11,15 +11,9 @@ header {
 
 header .navbar {
 	height: auto;
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-.is-sticky #navigation {
-  background: #fff;
-  z-index: 1000;
-  transition: 0.3s;
-  width: 100%;
-  padding: 0;
-}
+
 a,
 a:active,
 a:focus,
@@ -27,13 +21,14 @@ a:active {
   text-decoration: none;
 }
 
-.navbar-brand {
-  	padding: 0;
-  	height: auto;
 
-}
 .navbar-header{
   	padding-left: 15px;
+}
+.navbar-brand {
+    padding: 0;
+    height: auto;
+
 }
 .navbar-toggle {
   	border-color: #333;
@@ -48,10 +43,6 @@ a:active {
 }
 .navbar-toggle:hover .icon-bar {
   	background: #4a9fb8;
-}
-.navbar-toggle {
-  	border-color: #333;
-  	transition: 0.3s;
 }
 
 .menu a {
@@ -87,7 +78,7 @@ a:active {
 }
 
 /* Termina estilos de header y comienza el contenido*/
-/*Nosotros*/
+
 #nosotros {
   	padding: 150px 0;
   	position: relative;
@@ -106,17 +97,17 @@ a:active {
   	padding-bottom: 70px;
 }
 .title h2{
- 	color: #4a9fb8;
-  	font-size: 25px;
-	font-weight: 600;
-	padding-bottom: 25px;
-	text-transform: uppercase;
-	display: inline-block;
-	position: relative;
+ 	  color: #4a9fb8;
+    font-size: 25px;
+	  font-weight: 600;
+	  padding-bottom: 25px;
+	  text-transform: uppercase;
+	  display: inline-block;
+	  position: relative;
 }
 
 .title .descripcion p{
-	padding-top: 15px; 
+	  padding-top: 15px; 
   	font-size: 18px;
   	line-height: 24px;
   	font-weight: 400;
@@ -172,33 +163,33 @@ a:active {
 }
 
 .carousel-control.left {
-	background-image: none;
+	 background-image: none;
 	}
 .carousel-control.right {
-	right: 0;
-    left: auto;
-	background-image: none;
+	   right: 0;
+     left: auto;
+	   background-image: none;
 	}
 
 /*Final de carousel*/
 
 #servicios .servicios-title{
-	text-align: center;
+	  text-align: center;
   	padding-bottom: 70px;
 }
 
 #servicios .servicios-title h2{
-	color: #4a9fb8;
+	  color: #4a9fb8;
   	font-size: 25px;
-	font-weight: 600;
-	padding-bottom: 25px;
-	text-transform: uppercase;
-	display: inline-block;
-	position: relative;
+  	font-weight: 600;
+  	padding-bottom: 25px;
+  	text-transform: uppercase;
+  	display: inline-block;
+  	position: relative;
 }
 
 #servicios .servicios-title .servicios-descripcion p {
-	padding-top: 15px; 
+	  padding-top: 15px; 
   	font-size: 18px;
   	line-height: 24px;
   	font-weight: 400;
@@ -206,7 +197,7 @@ a:active {
 }
 
 #servicios .servicios-varios h4 {
-	font-size: 20px;
+	  font-size: 20px;
   	color: #4a9fb8;
   	position: relative;
   	text-transform: none;
@@ -215,7 +206,7 @@ a:active {
 }
 
 #servicios .servicios-varios p {
-	font-size: 15px;
+	  font-size: 15px;
   	color: #888;
   	line-height: 24px;
   	font-weight: 300;
@@ -223,7 +214,7 @@ a:active {
 }
 
 #contactanos{
-	padding: 100px 0;
+	  padding: 100px 0;
   	background:#f9f9f9;
 }
 #contactanos form input,

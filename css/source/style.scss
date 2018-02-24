@@ -1,0 +1,287 @@
+//color princial//
+$principal: #4a9fb8 ;
+
+// final color principal//
+
+//espaciado de lo contenedores principales//
+
+@mixin posision{
+	padding: 150px 0;
+  	position: relative;
+}
+
+//fin espaciado//
+
+body{
+	font: {
+		size:14px; 
+		weight:600;
+ }
+ line-height: 24px;
+ color: #444;
+}
+
+a,
+a:active,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+ 
+header{
+	padding: 20px 0;
+	background: #fff;
+	&.navbar{
+		height: auto;
+  		margin-bottom: 0;
+	}
+}
+
+navbar{
+	&-header{
+		padding-left: 15px;
+	}
+	&-brand{
+		 padding: 0;
+    	height: auto;
+	}
+	&-toggle {
+		border-color: #333;
+ 		transition: 0.3s;
+ 		.icon-bar{
+ 			background: #333;
+  			transition: 0.3s;
+ 		}
+	}
+	&-togle:hover{
+ 		border-color: $principal;
+ 		.icon-bar{
+ 			background: $principal;
+ 		}
+ 	}
+
+}
+
+.menu {
+	&.a{
+		color: #BDBDBD;
+		transition: 0.3s;
+		position: relative;
+		font-size: 16px;
+	}
+	& .a:before{
+		content: "";
+		position: absolute;
+		left: 16px;
+		bottom: 12px;
+		width: 0;
+		height: 1px;
+		background: $principal;
+		transition: 0.3s;
+	}
+	& .a:hover{
+		background: transparent;
+		color: $principal;
+	}
+	& .active a:before{
+		width: calc(100% - 30px);
+	}
+	& a:hover:before{
+		width: calc(100% - 30px);
+	}
+}
+
+/* Termina estilos de header y comienza el contenido*/
+
+#nosotros {
+  	@include posision;
+}
+#servicios {
+   @include posision;
+}
+#contactanos {
+    @include posision;
+}
+
+.title{
+	text-align: center;
+  	padding-bottom: 70px;
+& h2{
+	color: #4a9fb8;
+	font-size: 25px;
+	font-weight: 600;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+	display: inline-block;
+	position: relative;
+}
+& .descripcion p{
+	padding-top: 15px; 
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #848484;
+}
+}
+#nosotros{
+	& .datos{
+		h4{
+			font-size: 20px;
+		  	color: #4a9fb8;
+		  	position: relative;
+		  	text-transform: none;
+		  	margin-bottom: 10px;
+		  	font-weight: 400;
+		}
+		p{
+			font-size: 15px;
+		  	color: #888;
+		  	line-height: 24px;
+		  	font-weight: 300;
+		  	margin-top: 20px;
+		}
+	}
+	& .title{
+		img{
+			display: block; 
+		  	margin: 0 auto;
+		  	max-width: 100%;
+		  	width: 80%;
+		}
+	}
+}
+
+#carousel {
+	height: 500px;
+  	margin-bottom: 60px;
+  	&-caption{
+  		z-index: 2;
+  	}
+  	& .item{
+  		height: 500px;
+  		min-height: 280px;
+  	}
+  	&-inner{
+  		 .item img{
+  		 	position: absolute;
+		  	top: 0;
+		  	left: 0;
+		  	min-width: 100%;
+		  	height: 500px;
+		  	border:0px;
+  		}
+  	}
+  	&-control{
+  		.left{
+  			background-image: none;
+  		}
+  		.right{
+  			right: 0;
+     		left: auto;
+	   		background-image: none;
+  		}
+  	}
+}
+/*Final de carousel*/
+#servicios {
+	& .servicios{
+		text-align: center;
+  		padding-bottom: 70px;
+		&-title h2{
+			color: #4a9fb8;
+		  	font-size: 25px;
+		  	font-weight: 600;
+		  	padding-bottom: 25px;
+		  	text-transform: uppercase;
+		  	display: inline-block;
+		  	position: relative;
+		}
+		&-title .servicios-descripcion p{
+			padding-top: 15px; 
+		  	font-size: 18px;
+		  	line-height: 24px;
+		  	font-weight: 400;
+		  	color: #848484;
+		}
+	}
+	& .servicios-varios{
+		& h4{
+			font-size: 20px;
+		  	color: #4a9fb8;
+		  	position: relative;
+		  	text-transform: none;
+		  	margin-bottom: 10px;
+		  	font-weight: 400;
+		}
+		& p{
+			font-size: 15px;
+		  	color: #888;
+		  	line-height: 24px;
+		  	font-weight: 300;
+		  	margin-top: 20px;
+		}
+	}
+}
+//estilos para los input y textarea de contactanos//
+
+@mixin style-contacto{
+	padding: 24px 20px 0;
+    border-color: #4a9fb8;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #97a0af;
+    box-shadow: none;
+}
+#contactanos{
+	padding: 100px 0;
+  	background:#f9f9f9;
+  	& form {
+  		input{
+  			@include style-contacto;
+  			margin-bottom: 15px;
+  			padding: 24px 27px;
+
+  		}
+  		textarea{
+  			@include style-contacto;
+  			margin-bottom: 28px;
+			min-height: 172px;
+			resize: none;
+  		}
+  		button{
+  			float: right;
+			color: #fff;
+			font-size: 16px;
+			padding: 17px 43px;
+			background: #4a9fb8;
+			border-radius: 5px;
+			font-weight: 600;
+			border-color: transparent;
+			transition: 0.3s;
+			&:hover{
+				  background: none;
+				  color: #4a9fb8;
+				  border-color: #4a9fb8;
+			}
+  		}
+
+  	}
+}
+
+footer {
+	background: #E5E5E5;
+  	padding: 42px 0 65px 0;
+  	text-align: center;
+  	& p {
+  		font-size: 14px;
+		color: #111;
+		line-height: 1;
+		padding-top: 26px;
+  	}
+}
+
+.map {
+	& #googleMap{
+		min-height: 388px;
+	}
+}
