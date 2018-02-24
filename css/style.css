@@ -1,0 +1,278 @@
+body {
+	line-height: 24px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #444;
+}
+header {
+	padding: 20px 0;
+	background: #fff;
+}
+
+header .navbar {
+	height: auto;
+    margin-bottom: 0;
+}
+.is-sticky #navigation {
+  background: #fff;
+  z-index: 1000;
+  transition: 0.3s;
+  width: 100%;
+  padding: 0;
+}
+a,
+a:active,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  	padding: 0;
+  	height: auto;
+
+}
+.navbar-header{
+  	padding-left: 15px;
+}
+.navbar-toggle {
+  	border-color: #333;
+ 	transition: 0.3s;
+}
+.navbar-toggle .icon-bar {
+  	background: #333;
+  	transition: 0.3s;
+}
+.navbar-toggle:hover {
+  	border-color: #4a9fb8;
+}
+.navbar-toggle:hover .icon-bar {
+  	background: #4a9fb8;
+}
+.navbar-toggle {
+  	border-color: #333;
+  	transition: 0.3s;
+}
+
+.menu a {
+	color: #BDBDBD;
+	transition: 0.3s;
+	position: relative;
+	font-size: 16px;
+}
+
+.menu a:before {
+	content: "";
+	position: absolute;
+	left: 16px;
+	bottom: 12px;
+	width: 0;
+	height: 1px;
+	background: #4a9fb8;
+	transition: 0.3s;
+}
+.menu a:hover {
+	background: transparent;
+	color: #4a9fb8;
+}
+.menu .active a {
+  	color: #4a9fb8;
+}
+.menu .active a:before{
+  	width: calc(100% - 30px);
+}
+
+.menu a:hover:before {
+  	width: calc(100% - 30px);
+}
+
+/* Termina estilos de header y comienza el contenido*/
+/*Nosotros*/
+#nosotros {
+  	padding: 150px 0;
+  	position: relative;
+}
+#servicios {
+    padding: 150px 0;
+    position: relative;
+}
+#contactanos {
+    padding: 150px 0;
+    position: relative;
+}
+
+.title{
+  	text-align: center;
+  	padding-bottom: 70px;
+}
+.title h2{
+ 	color: #4a9fb8;
+  	font-size: 25px;
+	font-weight: 600;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+	display: inline-block;
+	position: relative;
+}
+
+.title .descripcion p{
+	padding-top: 15px; 
+  	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: 400;
+  	color: #848484;
+}
+
+#nosotros .datos h4{
+  	font-size: 20px;
+  	color: #4a9fb8;
+  	position: relative;
+  	text-transform: none;
+  	margin-bottom: 10px;
+  	font-weight: 400;
+}
+
+#nosotros .datos p {
+  	font-size: 15px;
+  	color: #888;
+  	line-height: 24px;
+  	font-weight: 300;
+  	margin-top: 20px;
+}
+
+#nosotros .title img{
+  	display: block; 
+  	margin: 0 auto;
+  	max-width: 100%;
+  	width: 80%;
+}
+
+/*carousel*/
+.carousel {
+  	height: 500px;
+  	margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  	z-index: 2;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  	height: 500px;
+  	min-height: 280px;
+}
+.carousel-inner > .item > img {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	min-width: 100%;
+  	height: 500px;
+  	border:0px;
+}
+
+.carousel-control.left {
+	background-image: none;
+	}
+.carousel-control.right {
+	right: 0;
+    left: auto;
+	background-image: none;
+	}
+
+/*Final de carousel*/
+
+#servicios .servicios-title{
+	text-align: center;
+  	padding-bottom: 70px;
+}
+
+#servicios .servicios-title h2{
+	color: #4a9fb8;
+  	font-size: 25px;
+	font-weight: 600;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+	display: inline-block;
+	position: relative;
+}
+
+#servicios .servicios-title .servicios-descripcion p {
+	padding-top: 15px; 
+  	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: 400;
+  	color: #848484;
+}
+
+#servicios .servicios-varios h4 {
+	font-size: 20px;
+  	color: #4a9fb8;
+  	position: relative;
+  	text-transform: none;
+  	margin-bottom: 10px;
+  	font-weight: 400;
+}
+
+#servicios .servicios-varios p {
+	font-size: 15px;
+  	color: #888;
+  	line-height: 24px;
+  	font-weight: 300;
+  	margin-top: 20px;
+}
+
+#contactanos{
+	padding: 100px 0;
+  	background:#f9f9f9;
+}
+#contactanos form input,
+#contactanos form textarea {
+  padding: 24px 20px 0;
+  border-color: #4a9fb8;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #97a0af;
+  box-shadow: none;
+}
+
+#contactanos form input {
+  margin-bottom: 15px;
+  padding: 24px 27px;
+}
+#contactanos form textarea {
+  margin-bottom: 28px;
+  min-height: 172px;
+  resize: none;
+}
+#contactanos form button {
+  float: right;
+  color: #fff;
+  font-size: 16px;
+  padding: 17px 43px;
+  background: #4a9fb8;
+  border-radius: 5px;
+  font-weight: 600;
+  border-color: transparent;
+  transition: 0.3s;
+}
+#contactanos form button:hover {
+  background: none;
+  color: #4a9fb8;
+  border-color: #4a9fb8;
+}
+.map #googleMap {
+  min-height: 388px;
+}
+
+footer {
+  background: #E5E5E5;
+  padding: 42px 0 65px 0;
+  text-align: center;
+}
+footer p {
+  font-size: 14px;
+  color: #111;
+  line-height: 1;
+  padding-top: 26px;
+}
